@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5; /* Light gray background for the whole page */
+    color: #333;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1, h2 {
+    color: #004d40; /* Teal color for headings */
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #b2dfdb; /* Light teal border color */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: #ffffff; /* White background */
+    transition: background 0.3s, border-color 0.3s;
+}
+
+fieldset:hover {
+    background: #f1f8f7; /* Slightly grayish background on hover */
+    border-color: #009688; /* Darker teal border color on hover */
+}
+
+legend {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #004d40; /* Teal color for legend */
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+    color: #00796b; /* Medium teal color for labels */
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #b2dfdb; /* Light teal border color */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="date"]:focus {
+    border-color: #004d40; /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(0, 77, 64, 0.3); /* Teal shadow on focus */
+    outline: none;
+}
+
+button {
+    background-color: #004d40; /* Teal background for buttons */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #003d33; /* Darker teal on hover */
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#resume-content {
+    padding: 20px;
+    border: 1px solid #b2dfdb; /* Light teal border color */
+    border-radius: 8px;
+    background: #ffffff; /* White background for resume content */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#resume-content h3 {
+    border-bottom: 2px solid #004d40; /* Teal underline for headings */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#resume-content > * {
+    animation: slideIn 0.5s ease-out;
+}
+
+#skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+#skills-list li {
+    padding: 8px 12px;
+    margin: 5px 0;
+    background: #004d40; /* Teal background for skills */
+    color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#skills-list li:hover {
+    background: #003d33; /* Darker teal on hover */
+    transform: translateY(-2px);
+}
+
+#skills-list li:active {
+    transform: translateY(0);
+}
+
+#toggle-skills-btn {
+    background-color: #00796b; /* Medium teal for toggle button */
+}
+
+#toggle-skills-btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+button:disabled {
+    background-color: #e0f2f1; /* Light teal for disabled buttons */
+    cursor: not-allowed;
+}
